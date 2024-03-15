@@ -1,0 +1,62 @@
+float x,y,d;
+
+void setup(){
+size(1200,1200);
+fill(255,255,255);
+rect(0,0,1200,1200);
+strokeWeight(2);
+
+//x=가로길이, y=세로길이, d=거리
+
+// 빨강둥이
+x=300; y=300; d=100;
+fill(255,80,95);
+rect(d,d,x,y);
+fill(255);
+circle(d+x/6,d+x/6,x/6);
+circle(d+x/2,d+x/6,x/6);
+fill(0);
+circle(d+x/6+x/70,d+x/6+y/70,x/15);
+circle(d+x/2+x/70,d+x/6+y/70,x/15);
+fill(255,80,95);
+arc(d+x/3,d+x/3,x/3,x/6,0,PI);
+
+// 파랑둥이
+x=200; y=250; d=450;
+fill(65,228,255);
+rect(d,d-100,x,y);
+fill(255);
+circle(d+x/6,d+y/6-100,x/6);
+circle(d+x/2,d+y/6-100,x/6);
+fill(0);
+circle(d+x/6+x/70,d+y/6+y/70-100,x/15);
+circle(d+x/2+x/70,d+y/6+y/70-100,x/15);
+fill(65,228,255);
+arc(d+x/3,d+y/3-100,x/3,y/6,0,PI);
+
+// 노랑둥이
+x=400; y=400; d=600;
+fill(245,255,76);
+rect(d,d+50,x,y);
+fill(255);
+circle(d+x/6,d+x/6+50,x/6);
+circle(d+x/2,d+x/6+50,x/6);
+fill(0);
+circle(d+x/6+x/70,d+x/6+y/70+50,x/15);
+circle(d+x/2+x/70,d+x/6+y/70+50,x/15);
+fill(245,255,76);
+arc(d+x/3,d+x/3+50,x/3,x/6,0,PI);
+
+// 보라둥이
+x=250; y=200; d=125;
+fill(201,150,255);
+rect(d+600,d+30,x,y);
+fill(255);
+circle(d+x/6+600,d+x/6+30,x/6);
+circle(d+x/2+600,d+x/6+30,x/6);
+fill(0);
+circle(d+x/6+x/70+600,d+x/6+y/70+30,x/15);
+circle(d+x/2+x/70+600,d+x/6+y/70+30,x/15);
+fill(201,150,255);
+arc(d+x/3+600,d+x/3+30,x/3,x/6,0,PI);
+}
